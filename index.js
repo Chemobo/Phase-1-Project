@@ -13,4 +13,16 @@ console.log(response.meals [0]['strIngredient1']);
 })
 	  .catch(err => console.error(err));
 
-      function displayMeals(mealObj){}
+//display function    
+function displayMeals(mealObj){const mealDiv = document.createElement('div')
+const image = document.createElement('img')
+image.src = mealObj.strMealThumb
+image.className = 'meal-image'
+const name = document.createElement('h3')
+name.innerText = mealObj.strMeal
+mealDiv.append(image, name)
+food.append(mealDiv)
+image.addEventListener('click',()=>{
+    mealOnclick(mealObj)
+})
+}
