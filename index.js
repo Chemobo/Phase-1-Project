@@ -11,21 +11,24 @@ fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a')
 })
 console.log(response.meals [0]['strIngredient1']);
 })
-	  .catch(err => console.error(err));
+.catch(err => console.error(err));
 
 //display function    
-function displayMeals(mealObj){const mealDiv = document.createElement('div')
-const image = document.createElement('img')
-image.src = mealObj.strMealThumb
-image.className = 'meal-image'
-const name = document.createElement('h3')
-name.innerText = mealObj.strMeal
-mealDiv.append(image, name)
+function displayMeals(mealObj){
+   const mealDiv = document.createElement('div')
+   const image = document.createElement('img')
+        image.src = mealObj.strMealThumb
+        image.className = 'meal-image'
+    const name = document.createElement('h3')
+          name.innerText = mealObj.strMeal
+          mealDiv.append(image, name)
 food.append(mealDiv)
+
 image.addEventListener('click',()=>{
-    mealOnclick(mealObj)
+mealOnclick(mealObj)
 })
 }
+
 function mealOnclick(mealObj){
 	fudd.innerHTML = ""
     const image = document.createElement('img')
@@ -42,6 +45,7 @@ for(let i=1;i<16;i++){
 	li.innerText = mealObj[`strIngredient${i}`]
 	ul.append(li)
 } 
+
 const button=document.createElement("button")
 button.innerText = 'Order'
 const descriptionDiv = document.createElement('div') 
@@ -49,8 +53,6 @@ const descriptionDiv = document.createElement('div')
 	descriptionDiv.append(name, title, ul, button)
 	fudd.append(image, descriptionDiv)
     button.addEventListener("click",()=>{
-		alert ("Success. Thank You!")
+		alert ("Order Placed. Thank You!")
 	 })
-	
-
 }
