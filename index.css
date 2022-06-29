@@ -14,3 +14,14 @@
     display: flex;
     float: left;
 }
+.image-large{
+    height: 400px;
+    width: 400px;
+}
+.detail{
+    margin-left: 10px;
+}
+.mealDiv{
+    justify-content: center;
+
+}
