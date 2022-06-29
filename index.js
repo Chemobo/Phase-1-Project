@@ -28,3 +28,10 @@ image.addEventListener('click',()=>{
 }
 function mealOnclick(mealObj){
 	fudd.innerHTML = ""
+    const image = document.createElement('img')
+	image.src = mealObj.strMealThumb
+	image.className = "image-large"
+	const name = document.createElement('h3')
+	name.innerText = mealObj.strMeal
+	const title = document.createElement('h4')
+	title.innerText = "Ingredients"
