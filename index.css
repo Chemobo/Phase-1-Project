@@ -9,3 +9,8 @@
     float: left;
 
 }
+
+#fudd{
+    display: flex;
+    float: left;
+}
