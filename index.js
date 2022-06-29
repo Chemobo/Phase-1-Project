@@ -26,3 +26,5 @@ image.addEventListener('click',()=>{
     mealOnclick(mealObj)
 })
 }
+function mealOnclick(mealObj){
+	fudd.innerHTML = ""
