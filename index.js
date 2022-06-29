@@ -48,3 +48,9 @@ const descriptionDiv = document.createElement('div')
 	descriptionDiv.className = "detail"
 	descriptionDiv.append(name, title, ul, button)
 	fudd.append(image, descriptionDiv)
+    button.addEventListener("click",()=>{
+		alert ("Success. Thank You!")
+	 })
+	
+
+}
