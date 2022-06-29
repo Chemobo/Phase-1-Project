@@ -35,3 +35,10 @@ function mealOnclick(mealObj){
 	name.innerText = mealObj.strMeal
 	const title = document.createElement('h4')
 	title.innerText = "Ingredients"
+    const ul = document.createElement('ul')
+for(let i=1;i<16;i++){
+	if(!mealObj[`strIngredient${i}`]) break
+	const li = document.createElement('li')
+	li.innerText = mealObj[`strIngredient${i}`]
+	ul.append(li)
+} 
