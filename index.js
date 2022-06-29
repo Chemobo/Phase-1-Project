@@ -44,3 +44,7 @@ for(let i=1;i<16;i++){
 } 
 const button=document.createElement("button")
 button.innerText = 'Order'
+const descriptionDiv = document.createElement('div') 
+	descriptionDiv.className = "detail"
+	descriptionDiv.append(name, title, ul, button)
+	fudd.append(image, descriptionDiv)
