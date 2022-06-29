@@ -42,3 +42,5 @@ for(let i=1;i<16;i++){
 	li.innerText = mealObj[`strIngredient${i}`]
 	ul.append(li)
 } 
+const button=document.createElement("button")
+button.innerText = 'Order'
